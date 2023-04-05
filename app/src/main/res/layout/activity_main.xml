@@ -9,6 +9,19 @@
     android:orientation="vertical"
     tools:context=".MainActivity">
 
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <com.google.android.material.tabs.TabLayout
+            android:id="@+id/tabLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            
+
+        </com.google.android.material.tabs.TabLayout>
+    </RelativeLayout>
+
     <LinearLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -47,32 +60,33 @@
             android:drawableEnd="@drawable/baseline_lock"
             android:hint="@string/insira_sua_senha"
             android:inputType="textPassword"
-            android:maxLength="100"
-             />
+            android:maxLength="100" />
 
 
     </LinearLayout>
 
-<LinearLayout
-    android:layout_width="wrap_content"
-    android:layout_height="wrap_content">
-    <Button
-        style="@style/Widget.AppCompat.Button.Colored"
+    <LinearLayout
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:background="#535353"
-        android:text="Entrar"
-        android:textColor="#F5F5F5"
-        android:textStyle="bold" />
+        android:layout_height="wrap_content">
 
-    <Button
-        style="@style/Widget.AppCompat.Button.Colored"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:background="#535353"
-        android:text="Sair"
-        android:textColor="#F5F5F5"
-        android:layout_marginLeft="40dp"
-        android:textStyle="bold" /></LinearLayout>
+        <Button
+            style="@style/Widget.AppCompat.Button.Colored"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="#535353"
+            android:text="Entrar"
+            android:textColor="#F5F5F5"
+            android:textStyle="bold" />
+
+        <Button
+            style="@style/Widget.AppCompat.Button.Colored"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="40dp"
+            android:background="#535353"
+            android:text="Sair"
+            android:textColor="#F5F5F5"
+            android:textStyle="bold" />
+    </LinearLayout>
 </LinearLayout>
 
